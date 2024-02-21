@@ -6,16 +6,18 @@ from .models import Cliente
 def home(request):
     return render(request, 'agenda.html')
 
-def clientes(request):
-    if request.method == "GET":
+def pacientes(request):
+    #if request.method == "GET":
       return render(request, 'clientes.html')
-    elif request.method  == "POST":
-       nome = request.POST.get('nome')
-
-       cliente = Cliente(
-          nome = nome
-       )
-
-       cliente.save
+    #elif request.method  == "POST":
        
-       return HttpResponse('Teste')
+
+      # nome = request.POST.get('nome')
+
+      # cliente = Cliente(
+        #  nome = nome
+       #)
+
+       #cliente.save
+       
+       

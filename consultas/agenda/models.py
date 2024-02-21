@@ -2,6 +2,7 @@ from django.db import models
 
 class Cliente(models.Model):
     nome = models.CharField(max_length=40)
+    data_nascimento = models.DateField
     rua = models.CharField(max_length=40)
     numero = models.IntegerField()
     bairro = models.CharField(max_length=40)
